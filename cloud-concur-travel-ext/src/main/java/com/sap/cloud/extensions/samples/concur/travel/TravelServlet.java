@@ -197,7 +197,7 @@ public class TravelServlet extends HttpServlet {
 		// Set proxy header for On-Premise connectivity
 		setProxyHeader(authConnection, proxyType);
 
-		// Set required headers for authentication and header for JSON-formatted response
+		// Set required headers for authorization and header for JSON-formatted response
 		String authorization = authenticate(user, password);
 		authConnection.setRequestProperty("Authorization", "Basic " + authorization);
 		authConnection.setRequestProperty("X-ConsumerKey", consumerKey);
@@ -220,7 +220,7 @@ public class TravelServlet extends HttpServlet {
 		String travelURL = apiProperties.get("URL") + TRAVEL_PATH;
 		String proxyType = apiProperties.get("ProxyType");
 
-		// get the destination url
+		// get the destination URL
 		URL url = new URL(travelURL);
 		Proxy proxy = getProxy(proxyType);
 		HttpURLConnection apiConnection = (HttpURLConnection) url.openConnection(proxy);

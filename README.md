@@ -59,7 +59,7 @@ X-ConsumerKey=<b><i>your consumer key</i></b><br>
 After deployment the application is accessible on the following URL:
 `http(s)://host:port/com.sap.hana.cloud.samples.concur.travel/travel`
 
-You should see either an empty ItineraryInfoList or a list containing the travel itineraries of the people using Concur in your company. 
+You should see either an empty ItineraryInfoList or a list containing your travel itineraries.
 
 ## Resources
 
