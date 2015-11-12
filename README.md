@@ -10,7 +10,7 @@ Prerequisites:
 
 ##What is it?
 
-This is a sample showing how you can connect to the Concur API and get your travel itineraries.
+This is a sample showing how you can connect to the Concur API and get the travel itineraries for the people in your company.
 
 ## How to run it?
 
